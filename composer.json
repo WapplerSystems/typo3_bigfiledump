@@ -1,10 +1,11 @@
 {
 	"name": "wapplersystems/bigfiledump",
 	"type": "typo3-cms-extension",
-	"description": "",
+	"description": "Fixes a problem with very large files that are larger than the working memory",
 	"keywords": [
 		"TYPO3",
-		"extension"
+		"extension",
+		"filedump"
 	],
 	"homepage": "https://wappler.systems",
 	"authors": [
