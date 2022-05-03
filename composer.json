@@ -28,5 +28,10 @@
 		"typo3/cms": {
 			"extension-key": "bigfiledump"
 		}
+	},
+	"autoload": {
+		"psr-4": {
+			"WapplerSystems\\Bigfiledump\\": "Classes"
+		}
 	}
 }
