@@ -135,7 +135,7 @@ class FileDumpController
 
         if ($file->getStorage()->getDriverType() === 'Local') {
             $properties = [
-                'as_download' => (bool)($parameters['dl'] ?? false),
+                'as_download' => (bool)($parameters['dl'] ?? true),
                 'filename_overwrite' => $parameters['fn'] ?? null,
                 'mimetype_overwrite' => false,
             ];
