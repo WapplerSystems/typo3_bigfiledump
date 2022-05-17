@@ -137,7 +137,7 @@ class FileDumpController
             $properties = [
                 'as_download' => (bool)($parameters['dl'] ?? true),
                 'filename_overwrite' => $parameters['fn'] ?? null,
-                'mimetype_overwrite' => false,
+                'mimetype_overwrite' => null,
             ];
             $fileInfo = $file->getStorage()->getFileInfoByIdentifier($file->getIdentifier(), ['name', 'mimetype', 'mtime', 'size']);
             $downloadName = $properties['filename_overwrite'] ?? $fileInfo['name'] ?? '';
